@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+                    <!-- font-family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+                        <!-- font-awsome kit -->
+    <script src="https://kit.fontawesome.com/8f1a0e3ec7.js" crossorigin="anonymous"></script>
+    <style>
+        .login-container{
+            margin-top: 75px;
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+        .login-form input{
+            margin-top: 5px;
+            font-size: 1.5em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .login-form input[type=submit]{
+            background-color: gray;
+            font-weight: 700px;
+            border: none;
+            color:rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        body{
+            font-family: "Open sans";
+            background-color: gray;
+            background-image: -webkit-linear-gradient(top left, #a802e0, #f7676a);
+        }
+        .login-form h3{
+            font-size: 40px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        nav a{
+            text-decoration: none;
+            color:azure;
+            
+        }
+        nav{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="#">Home</a>
+                <a href="#">Dash Board</a>
+                <a href="#">Contact</a>
+            </span>
+            <span>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form class="login-form">
+            <h3>Login Here</h3>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="abc@gmail.com" required>
+            <input type="password" placeholder="password 8-15 character" required>
+            <input type="password" placeholder="confirm password" required>
+            <input type="submit" value="login">
+        </form>
+    </section>
+    
+</body>
+</html>
